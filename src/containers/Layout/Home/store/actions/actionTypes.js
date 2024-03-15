@@ -1,0 +1,6 @@
+export const INITIALIZE_HOME = "INITIALIZE_HOME";
+export const SLIDE = "SLIDE";
+export const RENDER_BEST_SELLERS = "RENDER_BEST_SELLERS";
+export const LOAD = "LOAD";
+export const LOAD_OTHER_PRODUCTS = "LOAD_OTHER_PRODUCTS";
+

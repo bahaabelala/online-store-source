@@ -1,0 +1,120 @@
+.User {
+  width: 95%;
+  height: 125px;
+  margin: 10px auto;
+  background-color: var(--white-semitransparent);
+  border: 1px solid var(--blue-supertransparent);
+  border-radius: 10px;
+  overflow: hidden;
+
+  position: relative;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.User:hover {
+  border: 1px solid var(--blue);
+}
+
+.imageContainer {
+  width: 125px;
+  padding: 5px;
+}
+
+.userImage {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.detailsContainer {
+  padding: 10px 10px 10px 20px;
+
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.username {
+  line-height: 170%;
+
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.email {
+  color: var(--grey-light);
+
+  font-size: 1rem;
+  font-weight: 400;
+
+  flex-grow: 1;
+}
+
+.userID {
+  color: var(--blue-lightened);
+
+  font-size: 0.8rem;
+  font-weight: 300;
+
+  align-self: flex-end;
+}
+
+.optionsContainer {
+  width: 100%;
+  height: 100%;
+  background-color: var(--black-transparent);
+
+  opacity: 0;
+
+  transition: opacity 0.1s ease-out;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.optionsContainer:hover {
+  opacity: 1;
+}
+
+.optionsContainer i {
+  width: 50px;
+  height: 50px;
+  margin: 25px;
+  cursor: pointer;
+  color: white;
+  background-color: var(--grey-light);
+  border-radius: 50%;
+
+  font-size: 25px;
+
+  transition: background-color 0.1s ease-out;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.optionsContainer .deleteIcon:hover {
+  background-color: var(--red);
+}
+
+.optionsContainer .editIcon:hover {
+  background-color: var(--green);
+}
+
+
+@media (max-width: 500px) {
+  .imageContainer {
+    display: none;
+  }
+}

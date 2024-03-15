@@ -1,0 +1,17 @@
+.Footer {
+  padding: 20px 7.32%;
+  text-align: center;
+}
+
+/*.line {
+  width: 100%;
+  height: 2px;
+  margin: 0 auto 20px auto;
+  background-color: var(--grey-light);
+}*/
+
+.copyRight {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--grey-light);
+}

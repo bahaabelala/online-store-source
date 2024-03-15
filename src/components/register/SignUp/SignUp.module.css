@@ -1,0 +1,20 @@
+.existedCustomer {
+  margin-top: 10px;
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: var(--grey-light);
+}
+
+.existedCustomer a:link,
+.existedCustomer a:visited {
+  color: var(--blue);
+  font-weight: 700;
+  text-decoration: none;
+
+  transition: color 0.2s ease-out;
+}
+
+.existedCustomer a:hover,
+.existedCustomer a:active {
+  color: black;
+}

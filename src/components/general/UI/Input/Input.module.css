@@ -1,0 +1,153 @@
+.Input {
+  max-width: 90%;
+  width: 350px;
+  padding: 15px;
+  margin-bottom: 25px;
+  border: solid 1px var(--grey-light);
+  border-radius: 5px;
+  outline: none;
+  background-color: var(--blue-supertransparent);
+
+  font-size: 1rem;
+  font-weight: 400;
+
+  transition: border-color 0.2s ease-out;
+}
+
+.Input:focus,
+.SelectInput:focus {
+  border-color: var(--blue);
+}
+
+/* ============
+    Textarea Input
+    ============ */
+
+.Textarea {
+  min-height: 100px;
+  resize: none;
+}
+
+/* ============
+    File Input
+    ============ */
+
+.FileInputContainer {
+  max-width: 90%;
+  width: 350px;
+  min-height: 50px;
+  margin-bottom: 25px;
+  border: solid 1px var(--grey-light);
+  border-radius: 5px;
+  position: relative;
+
+  transition: border 0.2s ease-out;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.FileURLInput {
+  outline: none;
+  border: none;
+  background-color: var(--blue-supertransparent);
+  pointer-events: none;
+  padding: 15px;
+  border-radius: 5px 0 0 5px;
+  text-overflow: ellipsis;
+
+  font-size: 1rem;
+  font-weight: 400;
+
+  flex-grow: 1;
+}
+
+.FileURLInput:focus .FileInputContainer {
+  border: 1px solid var(--blue);
+}
+
+.FileInput {
+  display: none;
+}
+
+.FileInputLabel {
+  width: 75px;
+  background-color: var(--blue-lightened);
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+
+  font-size: 1rem;
+  font-weight: 400;
+
+  transition: background-color 0.2s ease-out;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.FileInputLabel:hover {
+  background-color: var(--blue);
+}
+
+.loaderContainer {
+  height: 100%;
+  width: 50px;
+
+  position: absolute;
+  top: 0;
+  right: -50px;
+}
+
+/* ============
+    Select Input
+    ============ */
+
+.SelectInput {
+  padding: 15px;
+  margin-bottom: 25px;
+  border: solid 1px var(--grey-light);
+  border-radius: 5px;
+  outline: none;
+  background-color: var(--blue-supertransparent);
+
+  font-size: 1rem;
+  font-weight: 400;
+
+  transition: border-color 0.2s ease-out;
+}
+
+.SelectInput:hover {
+  border-color: var(--blue);
+}
+
+/* ============
+    Radio Input
+    ============ */
+
+.RadioInputContainer {
+  margin-bottom: 25px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.RadioInputContainer > * {
+  cursor: pointer;
+}
+
+.RadioInput {
+  width: 18px;
+  height: 18px;
+}
+
+.RadioInputLabel {
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  color: var(--grey-dark);
+  padding-left: 10px;
+}

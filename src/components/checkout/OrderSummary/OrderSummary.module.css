@@ -1,0 +1,53 @@
+.OrderSummary {
+  margin: 85px 7.32% 50px 7.32%;
+  border-top: 2px solid var(--blue-lightened);
+  border-bottom: 2px solid var(--blue-lightened);
+  background-color: var(--white-semitransparent);
+
+  font-size: 1.3rem;
+  font-weight: 300;
+
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.OrderSummary > * {
+  padding: 20px;
+}
+
+.OrderSummary > *:nth-child(n + 2) {
+  border-top: 1px solid var(--grey-light);
+}
+
+.orderItemsContainer h2,
+.pricesSummary {
+  line-height: 170%;
+}
+
+.orderItems {
+  padding: 10px;
+  overflow-x: auto;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.orderItems > * {
+  margin: 10px 5px;
+}
+
+.orderButtonContainer {
+  padding-top: 50px;
+
+  display: flex;
+  align-items: center;
+}
+
+.loaderContainer {
+  width: 100px;
+
+  position: relative;
+}

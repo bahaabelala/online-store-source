@@ -1,0 +1,85 @@
+.Cart {
+  padding: 0 7.32%;
+}
+
+/* ===================
+    Table of Products
+    =================== */
+
+.table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 1rem;
+  border: solid 1px var(--blue-supertransparent);
+  text-align: center;
+}
+
+.table img {
+  height: 100%;
+  width: auto;
+}
+
+.table tr {
+  border-bottom: solid 1px var(--blue-supertransparent);
+}
+
+.table a {
+  text-decoration: none;
+  color: var(--blue);
+}
+
+.tableHead th {
+  padding: 20px 50px;
+  border: none;
+}
+
+.tableHead {
+  font-weight: 700;
+  background-color: var(--blue-supertransparent);
+  color: var(--grey-dark);
+}
+
+.tableBody {
+  color: var(--grey-light);
+}
+
+.tableBody td {
+  height: 150px;
+  position: relative;
+}
+
+.actionCell i {
+  font-size: 25px;
+  cursor: pointer;
+
+  transition: color 0.1s ease-out;
+}
+
+.actionCell i:hover {
+  color: var(--red);
+}
+
+.decisionButtons {
+  padding: 30px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.decisionButtons button {
+  margin: 10px;
+}
+
+
+@media (max-width: 576px) {
+  .decisionButtons {
+    display: block;
+  }
+
+  .decisionButtons button {
+    margin: 10px 0;
+    width: 100%;
+  }
+}

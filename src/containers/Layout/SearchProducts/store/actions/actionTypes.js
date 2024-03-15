@@ -1,0 +1,2 @@
+export const RENDER_SEARCH_PRODUCTS = "RENDER_SEARCH_PRODUCTS";
+export const LOAD = "LOAD";

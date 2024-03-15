@@ -1,0 +1,38 @@
+.ProductDetails {
+  padding: 0 7.32%;
+}
+
+.productDetailsBody {
+  width: 100%;
+  margin: 0 auto 50px auto;
+  font-size: 1.3rem;
+  font-weight: 300;
+
+  /* text-align: center; */
+  /*
+  display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+
+.productDetailsBody > * {
+  margin: 10px 0;
+  line-height: 150%;
+}
+
+.imageContainer {
+  padding: 0 15%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: auto;
+}
+
+.numberInStock strong {
+  color: var(--blue);
+}

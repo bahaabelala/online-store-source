@@ -1,0 +1,128 @@
+.Slider {
+  height: 550px;
+  opacity: 0.9;
+  padding: 0 7.32%;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+
+}
+
+/* -----------------
+    Product Information
+    -------------------- */
+
+.productInfo {
+  width: 55%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.productInfo h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.productInfo p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--grey-dark);
+  margin: 5px 0 60px 0;
+}
+
+/* -----------------
+    Product Image
+    -------------------- */
+
+.productImage {
+  overflow: hidden;
+  width: 45%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.productImage img {
+  width: 100%;
+  height: auto;
+}
+
+/* -----------------
+    Products Navigation 
+    -------------------- */
+
+.navContainer {
+  width: 100px;
+  height: 20px;
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navContainer span {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: var(--blue-supertransparent);
+  cursor: pointer;
+
+  transition: background-color 0.1s ease-out;
+}
+
+.navContainer span:hover {
+  background-color: var(--blue-semitransparent);
+}
+
+.navContainer span.active {
+  background-color: var(--blue);
+}
+
+
+@media (max-width: 800px) {
+  .Slider {
+    flex-direction: column;
+  }
+
+  .productInfo,
+  .productImage {
+    width: 100%;
+    flex-grow: 1;
+  }
+
+  .productImage img {
+    height: 100%;
+    width: auto;
+    filter: brightness(90%);
+    padding: 10px;
+    padding-bottom: 0;
+  }
+
+  .productInfo {
+    display: block;
+    padding: 0;
+    text-align: center;
+  }
+
+  .productInfo p,
+  .productInfo button {
+    display: none;
+  }
+
+  @media (min-height: 800px) {
+    .productImage img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.Section {
+  padding: 20px 7.32%;
+}
+
+.titleContainer {
+  margin-bottom: 50px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.titleLine {
+  flex-grow: 1;
+
+  height: 2px;
+  background-color: var(--grey-light);
+  margin: 0 0 10px 25px;
+}
+
+/* =================
+    Layout of Products
+    =================== */
+
+/*.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.products > * {
+  margin: 0 1.21% 20px 1.21%;
+}
+
+
+.bestProducts {
+  justify-content: space-between;
+}
+
+.bestProducts > * {
+  margin: 0 0 20px 0;
+}*/

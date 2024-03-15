@@ -1,0 +1,12 @@
+.PayPal {
+  width: 300px;
+  max-width: 95%;
+  padding: 50px 40px;
+  background-color: var(--white-semitransparent);
+  border-radius: 5px;
+  border: solid 1px var(--blue);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

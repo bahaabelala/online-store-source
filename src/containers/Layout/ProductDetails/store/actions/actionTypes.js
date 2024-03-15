@@ -1,0 +1,3 @@
+export const RENDER_PRODUCT_DETAILS = "RENDER_PRODUCT_DETAILS";
+export const SET_QUANTITY = "SET_QUANTITY";
+export const LOAD = "LOAD";

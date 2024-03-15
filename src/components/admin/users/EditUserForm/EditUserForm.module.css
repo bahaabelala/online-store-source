@@ -1,0 +1,12 @@
+.EditUserForm {
+  width: 300px;
+  max-width: 90%;
+  height: 340px;
+  overflow: hidden;
+  border-radius: 5px;
+  padding: 25px 0;
+  border: 1px solid var(--blue-lightened);
+  background-color: var(--blue-supertransparent);
+  text-align: center;
+  margin: 0 auto;
+}

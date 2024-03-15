@@ -1,0 +1,43 @@
+.loaderContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  position: relative;
+  border-style: solid;
+  border-color: #0000;
+  border-radius: 50%;
+  animation: pie-fill 2s ease-out infinite alternate;
+}
+
+@keyframes pie-fill {
+  0%,
+  19% {
+    border-color: #0000 #0000 #0000 #0000;
+  }
+  20%,
+  39% {
+    border-color: var(--blue) #0000 #0000 #0000;
+  }
+  40%,
+  59% {
+    border-color: var(--blue-semitransparent) var(--blue) #0000 #0000;
+  }
+  60%,
+  79% {
+    border-color: var(--blue-supertransparent) var(--blue-semitransparent)
+      var(--blue) #0000;
+  }
+  80%,
+  100% {
+    border-color: #0000 var(--blue-supertransparent) var(--blue-semitransparent)
+      var(--blue);
+  }
+}

@@ -1,0 +1,40 @@
+.checkoutProgressHead {
+  width: 100%;
+  background-color: var(--blue-supertransparent);
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.progressItem > a {
+  padding: 0 20px;
+  margin: 5px 10px;
+  height: 50px;
+  width: 175px;
+  text-decoration: none;
+  color: black;
+  border-radius: 30px;
+  background-color: var(--blue-supertransparent);
+
+  font-weight: 400;
+  font-size: 1rem;
+
+  transition: background-color 0.1s ease-out, color 0.12s ease-out;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progressItem > a:hover,
+.progressItem.active > a {
+  background-color: var(--blue-lightened);
+  color: white;
+}
+
+.progressItem.disabled > a {
+  color: var(--grey-light);
+  pointer-events: none;
+}

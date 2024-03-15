@@ -1,0 +1,26 @@
+.ProfileShow {
+  position: relative;
+}
+
+.infoContainer {
+  width: 300px;
+  max-width: 90%;
+  border-radius: 5px;
+  padding: 25px 0;
+  border: 1px solid var(--blue-lightened);
+  background-color: var(--blue-supertransparent);
+  text-align: center;
+  margin: 0 auto;
+}
+
+.username {
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+.email {
+  margin: 10px 0 50px 0;
+  color: var(--grey-light);
+
+  font-size: 1rem;
+}

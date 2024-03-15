@@ -1,0 +1,135 @@
+.AdminProduct {
+  height: 75px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: solid 1px var(--blue-supertransparent);
+  background-color: var(--white-semitransparent);
+  cursor: pointer;
+  margin-bottom: 10px;
+  position: relative;
+
+  transition: border 0.1s ease-out;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.AdminProduct:hover {
+  border: 1px solid var(--blue);
+}
+
+.AdminProduct:hover .subdetailsContainer {
+  border-left: solid 1px var(--blue);
+}
+
+.AdminProduct > * {
+  padding: 10px;
+}
+
+.imageContainer {
+  min-width: 75px;
+
+  flex-basis: 75px;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: auto;
+}
+
+.titleContainer {
+  color: var(--grey-dark);
+
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.titleContainer h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.subdetailsContainer {
+  border-left: solid 1px var(--blue-supertransparent);
+  min-width: 105px;
+
+  transition: border-left 0.1s ease-out;
+
+  flex-basis: 105px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.subdetailsContainer strong {
+  color: var(--blue-lightened);
+}
+
+
+.optionsContainer {
+  width: 100%;
+  height: 100%;
+  background-color: var(--black-transparent);
+
+  opacity: 0;
+
+  transition: opacity 0.1s ease-out;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.optionsContainer:hover {
+  opacity: 1;
+}
+
+.optionsContainer i {
+  width: 50px;
+  height: 50px;
+  margin: 25px;
+  cursor: pointer;
+  color: white;
+  background-color: var(--grey-light);
+  border-radius: 50%;
+
+  font-size: 25px;
+
+  transition: background-color 0.1s ease-out;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.optionsContainer .deleteIcon:hover {
+  background-color: var(--red);
+}
+
+.optionsContainer .editIcon:hover {
+  background-color: var(--green);
+}
+
+
+@media (max-width: 600px) {
+  .AdminProduct {
+    height: 100px;
+  }
+
+  .imageContainer {
+    display: none;
+  }
+
+  .titleContainer {
+    padding-left: 15px;
+  }
+}

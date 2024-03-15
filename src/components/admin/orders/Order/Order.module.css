@@ -1,0 +1,47 @@
+.Order {
+  width: 100%;
+  /*min-width: 180px;*/
+  height: 150px;
+  border: solid 1px var(--blue-supertransparent);
+  background-color: var(--white-semitransparent);
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+
+  transition: border 0.1s ease-out;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.Order:hover {
+  border: 1px solid var(--blue);
+}
+
+.id,
+.date,
+.totalPrice {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.id {
+  background-color: var(--blue-supertransparent);
+  color: var(--grey-light);
+
+  flex-grow: 1;
+}
+
+.date {
+  color: var(--grey-dark);
+
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  flex-grow: 3;
+}
