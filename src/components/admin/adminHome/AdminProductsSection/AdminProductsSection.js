@@ -5,7 +5,7 @@ import AdminProduct from "./AdminProduct/AdminProduct";
 import Alert from '../../../general/UI/Alert/Alert';
 
 const AdminProductsSection = props => {
-  console.log(props.products);
+  // console.log(props.products);
 
   return (
     <section className={classes.AdminProductsSection}>

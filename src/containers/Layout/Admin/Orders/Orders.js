@@ -9,6 +9,7 @@ import SectionTitle from "../../../../components/general/UI/SectionTitle/Section
 import Order from '../../../../components/admin/orders/Order/Order';
 import Loader from "../../../../components/general/UI/Loader/Loader";
 import Pagination from "../../../../components/general/UI/Pagination/Pagination";
+import Alert from "../../../../components/general/UI/Alert/Alert";
 import { Row } from 'react-bootstrap';
 
 class Orders extends Component {
@@ -29,9 +30,12 @@ class Orders extends Component {
   }
 
   render() {
-    console.log(this.props.params.page)
+    // console.log(this.props.params.page)
+    console.log(this.props.orders)
 
     if (this.props.loading) return <Loader />;
+
+    if (this.props.orders === "No data to show!") return <Alert>You have no orders!</Alert>;
 
     if (this.props.orders.length !== []) {
       return (

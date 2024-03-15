@@ -42,6 +42,8 @@ class Users extends Component {
     // ^ After deleting-user action
     if (this.props.isUserDeleted) alert('Deleted successfully!');
 
+    console.log(admins);
+
     if (this.props.users.length !== 0) {
       return (
         <Aux>

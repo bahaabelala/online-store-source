@@ -7,6 +7,7 @@ import withRouter from '../../../../hoc/withRouter/withRouter';
 import Aux from '../../../../hoc/Auxiliary/Auxiliary';
 import Loader from '../../../../components/general/UI/Loader/Loader';
 import SectionTitle from '../../../../components/general/UI/SectionTitle/SectionTitle';
+import Alert from '../../../../components/general/UI/Alert/Alert';
 import Order from '../../../../components/admin/orders/Order/Order';
 import { Row } from 'react-bootstrap';
 
@@ -22,10 +23,14 @@ class MyOrders extends Component {
     render() {
         if (this.props.loading) return <Loader />;
 
+
         return (
             <Aux>
                 <SectionTitle>Your Orders</SectionTitle>
                 <div className={classes.ordersContainer}>
+                    {
+                        !this.props.orders.length ? <Alert>You have no orders!</Alert> : null
+                    }
                     <Row xs={1} sm={2} md={3} lg={4}>
                         {this.props.orders.map(order => {
                             return <Order
